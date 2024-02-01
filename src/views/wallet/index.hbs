@@ -1,0 +1,30 @@
+<style>
+h2 {
+  text-align: center;
+}
+p{
+ text-align: center;font-size:xx-large; 
+}
+td {
+  text-align: center;
+  font-size:x-large;
+  background-color: cadetblue;
+  border: 5px solid;
+  border-color:gold;
+}
+</style>
+
+{{#if wallet}}
+<table  class="table table-dark ">
+    <tr>
+        <th><H2> <FONT COLOR="white"> coin</FONT> </H2> </th>
+        <th><H2> <FONT COLOR="white"> amount</FONT> </H2></th>
+    </tr>
+    {{#each wallet}}
+    <tr>
+        <td>{{asset}}</td>
+        <td>{{free}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

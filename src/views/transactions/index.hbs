@@ -1,0 +1,36 @@
+<style>
+h2 {
+  text-align: center;
+}
+p{
+ text-align: center;font-size:xx-large; 
+}
+td {
+  text-align: center;
+  font-size:x-large;
+  background-color: cadetblue;
+  border: 5px solid;
+  border-color:gold;
+}
+</style>
+
+{{#if transactions}}
+<table  class="table table-dark ">
+    <tr>
+        <th><H2> <FONT COLOR="white"> symbol</FONT> </H2> </th>
+        <th><H2> <FONT COLOR="white"> action</FONT> </H2> </th>
+        <th><H2> <FONT COLOR="white"> amount buyed</FONT> </H2></th>
+        <th><H2> <FONT COLOR="white"> amount selled</FONT> </H2></th>
+        <th><H2> <FONT COLOR="white"> user id</FONT> </H2></th>
+    </tr>
+    {{#each transactions}}
+    <tr>
+        <td>{{symbol}}</td>
+        <td>{{action}}</td>
+        <td>{{executedQty}}</td>
+        <td>{{cummulativeQty}}</td>
+        <td>{{userId}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

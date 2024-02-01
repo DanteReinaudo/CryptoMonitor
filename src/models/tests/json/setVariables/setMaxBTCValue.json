@@ -1,0 +1,4 @@
+{ "requiredVariables":[],"rules":[{ "name":"Seteo en una variable el maximo valor de btc ","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"MAX BTC VALUE","value":{ "type":"CALL","name":"MAX","arguments":[{ "type":"DATA","symbol":"BTCUSDT","from":7200,"until":0,"default":[{ "type":"CONSTANT","value":17000 },{ "type":"CONSTANT","value":17100 }] }] } }]}] }
+
+
+

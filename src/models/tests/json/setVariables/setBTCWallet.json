@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"Seteo en una variable el valor de BTC en la wallet ","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"BTC ON WALLET","value":{ "type":"WALLET","symbol":"BTC" } }]}] }

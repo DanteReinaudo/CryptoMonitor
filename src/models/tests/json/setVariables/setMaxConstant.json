@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"Set max constant","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"MAX","value":{ "type":"CONSTANT","value":500 } }]}] }

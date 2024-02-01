@@ -1,0 +1,21 @@
+version: '3'
+services:
+  database:
+    image: mongo
+    volumes:
+      - db_data:/data/db
+  backend:
+    build:
+      context: .
+    environment:
+      - MONGO_URI=mongodb://database/tp_crypto_monitor
+      - WAIT_HOSTS=database:27017
+    depends_on:
+      - database
+    # env_file:
+    #   - ./.env
+    ports:
+      - "3000:3000"
+
+volumes:
+  db_data:

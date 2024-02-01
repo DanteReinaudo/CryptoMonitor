@@ -1,0 +1,41 @@
+<div class="col-md-10 mx-auto">
+    <div class="card card-body">
+        <form class="was-validated" action="/admin/add_rules" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Rule Name" autofocus required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="description" class="form-control" placeholder="Description" required>
+            </div>
+
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputfile" aria-describedby="helpBlock" accept=".json"required>
+                <label class="custom-file-label" for="inputfile"> Choose File</label>
+                <p id="helpBlock" class="form-text text-muted">
+                        You must load from your computer a rule file in json format.
+                </p>
+                
+                <pre id="output" ></pre> 
+                <input id="format" name="format" type="hidden">  
+                <script type="text/javascript">
+                    document.getElementById('inputfile')
+                        .addEventListener('change', function() {   
+                            var fr = new FileReader();
+                            fr.onload = function(){
+                                document.getElementById('output')
+                                    .textContent = fr.result;
+                                document.getElementById('format')
+                                    .value = fr.result;
+                            }
+                            fr.readAsText(this.files[0]);
+                        })
+                </script>
+            </div>
+
+            <button class="btn btn-primary btn-block">
+                save
+            </button>
+        </form>
+    </div>
+</div>

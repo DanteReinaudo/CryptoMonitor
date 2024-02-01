@@ -1,0 +1,4 @@
+{ "requiredVariables":[],"rules":[{ "name":"Seteo en una variable el ultimo valor de ETH ","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"ETH LAST VALUE","value":{ "type":"CALL","name":"LAST","arguments":[{ "type":"DATA","symbol":"ETHUSDT","from":7200,"until":0,"default":[{ "type":"CONSTANT","value":1200 },{ "type":"CONSTANT","value":1270 }] }] } }]}] }
+
+
+

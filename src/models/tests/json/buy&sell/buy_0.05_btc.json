@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"Compro 0.05 BTC con USDT","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"BUY_MARKET","symbol":"BTCUSDT","amount":{ "type":"CONSTANT","value":0.1 } }]}] }

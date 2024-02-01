@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"Compro 0.1 ETH con USDT","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"BUY_MARKET","symbol":"ETHUSDT","amount":{ "type":"CONSTANT","value":0.1 } }]}] }

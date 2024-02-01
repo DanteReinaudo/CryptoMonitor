@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"Vendo 0.05 BTC por USDT","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SELL_MARKET","symbol":"BTCUSDT","amount":{ "type":"CONSTANT","value":0.05 } }]}] }

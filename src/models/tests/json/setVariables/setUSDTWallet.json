@@ -1,0 +1,2 @@
+{ "requiredVariables":[],"rules":[{ "name":"Seteo en una variable el valor de USDT en la wallet ","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"USDT ON WALLET","value":{ "type":"WALLET","symbol":"USDT" } }]}] }
+

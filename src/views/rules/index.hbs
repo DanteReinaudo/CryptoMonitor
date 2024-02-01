@@ -1,0 +1,63 @@
+<style>
+p {font-size:X-large;}
+.panel-heading{    
+       padding: 0px; //if not working use !important rule
+}
+h1 {
+  text-align: center;
+}
+
+</style>
+
+{{#if rules}}
+{{#each rules}}
+<div class="col-md-10">
+    <div class="card " >
+        <div class="card-header" style="background-color: #161818;">
+            <h1 class="float_center"><FONT COLOR="white"> {{name}} </FONT>  </h1>
+        </div>
+        <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample"></div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button btn-secondary btn-block collapsed float-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Show Description
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button btn-secondary btn-block collapsed float-center" type="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Show Format
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>{{format}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form method='POST' action='/rules/execute'>
+                <input id="format" name="rule" type="hidden" value= "{{ format }}">
+                <button class="btn btn-warning btn-block">
+                    <font COLOR=" #161818" >Execute</font>
+                </button>
+            </form> 
+
+
+
+        </div> 
+    </div>
+</div>
+
+{{/each}}
+{{/if}}
+

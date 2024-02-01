@@ -1,0 +1,33 @@
+<style>
+h1 {
+  text-align: center;
+}
+td {
+  text-align: center;
+  font-size:x-large;
+  background-color:gold;
+  border: 5px solid;
+  border-color:gold;
+  color: rgba(0, 0, 0, 0.812)
+}
+th{
+  background-color: black;
+}
+
+
+</style>
+
+{{#if market}}
+<table  class="table table-dark">
+    <tr>
+        <th><H1> <FONT COLOR="gold"> Coin</FONT> </H1> </th>
+        <th><H1> <FONT COLOR="gold"> Last Value</FONT> </H1></th>
+    </tr>
+    {{#each market}}
+    <tr>
+        <td>{{coin}}</td>
+        <td>{{lastValue}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

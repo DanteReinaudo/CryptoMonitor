@@ -1,0 +1,32 @@
+<style>
+h2 {
+  text-align: center;
+}
+p{
+ text-align: center;font-size:xx-large; 
+}
+td {
+  text-align: center;
+  font-size:x-large;
+  background-color: cadetblue;
+  border: 5px solid;
+  border-color:gold;
+}
+</style>
+
+{{#if variables}}
+<table  class="table table-dark ">
+    <tr>
+        <th><H2> <FONT COLOR="white"> name</FONT> </H2> </th>
+        <th><H2> <FONT COLOR="white"> type</FONT> </H2></th>
+        <th><H2> <FONT COLOR="white"> value</FONT> </H2></th>
+    </tr>
+    {{#each variables}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{type}}</td>
+        <td>{{value}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}

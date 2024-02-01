@@ -1,0 +1,2 @@
+{ "requiredVariables":[],"rules":[{ "name":"Seteo en una variable el valor de ETH en la wallet ","condition":{ "type":"CONSTANT","value":true },"action":[{ "type":"SET_VARIABLE","name":"ETH ON WALLET","value":{ "type":"WALLET","symbol":"ETH" } }]}] }
+

@@ -1,0 +1,1 @@
+{ "requiredVariables":[],"rules":[{ "name":"False Rule","condition":{ "type":"CONSTANT","value":false },"action":[{ "type":"SET_VARIABLE","name":"USDT ON WALLET","value":{ "type":"WALLET","symbol":"USDT" } }]}] }

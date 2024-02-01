@@ -1,0 +1,40 @@
+{
+    "requiredVariables": [ 
+        "LIMIT_VALUE_BTC/USDT",
+        "MAX_VALUE_BTC/USDT"
+    ],
+    "rules": [
+        {
+        "name": "Escape", 
+        "condition": {
+            "type": "CALL",
+            "name": "<", 
+            "arguments":[{
+                "type": "CALL",
+                "name": "LAST", 
+                "arguments": {
+                    "type": "DATA", 
+                    "symbol": "BTC/USDT", 
+                    "from": 3600,
+                    "until": 0, 
+                    "default": {
+                        "type": "VARIABLE",
+                        "name": "LIMIT_VALUE_BTC/USDT"
+                    }
+                }
+            },{
+                "type": "VARIABLE",
+                "name": "LIMIT_VALUE_BTC/USDT"
+            }
+        ]
+        },
+        "action": [{
+            "type": "SELL_MARKET",
+            "symbol": "BTC/USDT", 
+            "amount": {
+                "type": "WALLET",
+                "symbol": "BTC"
+            }
+        }]
+    }]
+}
