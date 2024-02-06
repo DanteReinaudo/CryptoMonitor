@@ -1,6 +1,6 @@
 # CryptoMonitor
 
-Este es el repositorio de un trabajo realizado en 2022, en el marco de la materia Tecnicas de Diseño de la FIUBA. ESte respositorio es la copia del original, el cual es privado y pertenece a la organización de los profesores.
+Este es el repositorio de un trabajo realizado en 2022, en el marco de la materia Tecnicas de Diseño de la FIUBA. Este respositorio es la copia del original, el cual es privado y pertenece a la organización de los profesores.
 
 ## Descripción
 
